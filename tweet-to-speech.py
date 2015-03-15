@@ -48,9 +48,9 @@ def say(text, lang=config.TTSDEFAULTLANG):
     try:
       mixer = alsaaudio.Mixer(config.MIXERID)
       oldvolume = mixer.getvolume()[0]
+      mixer.setvolume(config.PLAYVOLUME)
     except Exception as e:
       print("Cannot set volume: %s" % e.message)
-    mixer.setvolume(config.PLAYVOLUME)
     
     call(["aplay", fname])
 
