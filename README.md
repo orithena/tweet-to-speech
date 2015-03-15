@@ -55,15 +55,21 @@ Register your app and generate the tokens on apps.twitter.com.
 
 This script needs moar features. Send me pull requests :)
 
+It's especially encouraged to extend filters.py!
+
 Identified improvements:
 
-  * HTML entities must be converted.
+  * HTML entities must be converted. (done)
   * Some tweets should not be spoken. If it only contains a link, there's no
-    use to speak it.
-  * Retweets need special attention.  
+    use to speak it. (we need moar filters in filters.py!)
+  * Retweets need special attention. (done... well, okay, by completely 
+    filtering them out)
   * Some characters or character groups need to be converted to speakable text.
     E.g. "<3" needs a speakable equivalent. Don't get me started on Emojis.
-  * Links are horrible to listen to.
+    (do it in filter.py!)
+  * Links are horrible to listen to. (we need the regex replacement feature 
+    implemented, then it could be done in filters.py)
   * It should be configurable whether you want to listen to your timeline, a
-    list, your notifications or a search query.
+    list, your notifications or a search query. (well, we need to read the
+    twython api...)
 
