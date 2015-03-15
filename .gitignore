@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+config.py
 
 # C extensions
 *.so
@@ -52,3 +53,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# temporary editor files
+*~
+$\#*
